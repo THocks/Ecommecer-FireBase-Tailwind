@@ -25,12 +25,10 @@ const CarrouselProdutos = () => {
   }
 
   useEffect(() => {
-    // define o intervalo para troca de imagem a cada 20 segundos
     const interval = setInterval(() => {
       handleNext();
     }, 20000);
 
-    // limpa o intervalo quando o componente for desmontado
     return () => clearInterval(interval);
   }, [currentImage]);
 
@@ -50,7 +48,7 @@ const CarrouselProdutos = () => {
             onClick={handlePrev}
             className="px-4 py-2 rounded-lg  mr-4 focus:outline-none"
           >
-            <BsFillArrowLeftCircleFill size={40} color="black" />
+            <BsFillArrowLeftCircleFill size={40} color="white" />
           </button>
         </div>
         <div className="absolute inset-y-0 right-0 flex items-center">
@@ -58,7 +56,7 @@ const CarrouselProdutos = () => {
             onClick={handleNext}
             className="px-4 py-2 rounded-lg  focus:outline-none"
           >
-            <BsFillArrowRightCircleFill size={40} color="black" />
+            <BsFillArrowRightCircleFill size={40} color="white" />
           </button>
         </div>
       </div>
