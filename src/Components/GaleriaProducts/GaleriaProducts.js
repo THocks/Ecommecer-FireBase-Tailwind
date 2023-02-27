@@ -82,6 +82,7 @@ const GaleriaProducts = () => {
           ></span>
         </a>
       </div>
+      <hr className="mt-4 " />
       {/** Mostrar as marcas Slogan */}
       <div className="border-b border-grey-dark mt-8 px-4 py-8 md:px-6 md:py-12 lg:px-20  ">
         <h4 className="text-center font-hk text-xl uppercase text-gray-800 font-bold">
