@@ -26,7 +26,10 @@ const GaleriaProducts = () => {
             key={product.id}
             className="relative m-10 flex  w-full max-w-xs flex-col overflow-hidden rounded-lg border  border-gray-100 bg-white shadow-md hover:scale-105"
           >
-            <Link className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl  justify-center">
+            <Link
+              className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl  justify-center"
+              to={`/product/${product.id}`}
+            >
               <img
                 className="object-cover"
                 src={product.image}
@@ -70,7 +73,7 @@ const GaleriaProducts = () => {
         ))}
       </div>
       <div className="flex justify-center mb-2">
-        <a href="#_" className="relative inline-block text-lg group ">
+        <Link to="/produtos" className="relative inline-block text-lg group ">
           <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
             <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
             <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-slate-900 group-hover:-rotate-180 ease"></span>
@@ -80,7 +83,7 @@ const GaleriaProducts = () => {
             className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-slate-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
             data-rounded="rounded-lg"
           ></span>
-        </a>
+        </Link>
       </div>
       <hr className="mt-4 " />
       {/** Mostrar as marcas Slogan */}

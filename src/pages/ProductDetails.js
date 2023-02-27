@@ -79,7 +79,7 @@ const ProductDetails = () => {
             </div>
 
             <div className="lg:col-span-2 lg:row-span-2 lg:row-end-2">
-              <h1 className="sm: text-2xl font-bold text-gray-900 sm:text-3xl">
+              <h1 className="sm: text-xl font-bold text-gray-900 sm:text-xl">
                 {name}
                 <span className="ml-8 rounded-full bg-red-500 px-5 py-2 font-hk text-sm font-bold uppercase leading-none text-white">
                   off 25%
@@ -183,68 +183,68 @@ const ProductDetails = () => {
             </div>
           </div>
         </div>
-        <ul class="flex justify-center mt-14">
-          <li class="py-8 text-left border px-4 m-2">
-            <div class="flex items-start">
+        <ul className="flex justify-center mt-14">
+          <li className="py-8 text-left border px-4 m-2">
+            <div className="flex items-start">
               <img
-                class="block h-10 w-10 max-w-full flex-shrink-0 rounded-full align-middle"
+                className="block h-10 w-10 max-w-full flex-shrink-0 rounded-full align-middle"
                 src="https://i.pravatar.cc/150"
                 alt=""
               />
 
-              <div class="ml-6">
-                <div class="flex items-center">{Stars(rating)}</div>
-                <p class="mt-5 text-base text-gray-900">
+              <div className="ml-6">
+                <div className="flex items-center">{Stars(rating)}</div>
+                <p className="mt-5 text-base text-gray-900">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Porro blanditiis sapiente ab dolores, ad dignissimos
                   perspiciatis.
                 </p>
-                <p class="mt-5 text-sm font-bold text-gray-900"></p>
-                <p class="mt-1 text-sm text-gray-600">Março 01, 2023</p>
+                <p className="mt-5 text-sm font-bold text-gray-900"></p>
+                <p className="mt-1 text-sm text-gray-600">Março 01, 2023</p>
               </div>
             </div>
           </li>
         </ul>
-        <ul class="flex justify-center mt-8">
-          <li class="py-8 text-left border px-4 m-2">
-            <div class="flex items-start">
+        <ul className="flex justify-center mt-8">
+          <li className="py-8 text-left border px-4 m-2">
+            <div className="flex items-start">
               <img
-                class="block h-10 w-10 max-w-full flex-shrink-0 rounded-full align-middle"
+                className="block h-10 w-10 max-w-full flex-shrink-0 rounded-full align-middle"
                 src="https://i.pravatar.cc/151"
                 alt=""
               />
 
-              <div class="ml-6">
-                <div class="flex items-center">{Stars(rating)}</div>
-                <p class="mt-5 text-base text-gray-900">
+              <div className="ml-6">
+                <div className="flex items-center">{Stars(rating)}</div>
+                <p className="mt-5 text-base text-gray-900">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Porro blanditiis sapiente ab dolores, ad dignissimos
                   perspiciatis.
                 </p>
-                <p class="mt-5 text-sm font-bold text-gray-900"></p>
-                <p class="mt-1 text-sm text-gray-600">Fevereiro 25, 2023</p>
+                <p className="mt-5 text-sm font-bold text-gray-900"></p>
+                <p className="mt-1 text-sm text-gray-600">Fevereiro 25, 2023</p>
               </div>
             </div>
           </li>
         </ul>
-        <ul class="flex justify-center mt-8">
-          <li class="py-8 text-left border px-4 m-2">
-            <div class="flex items-start">
+        <ul className="flex justify-center mt-8">
+          <li className="py-8 text-left border px-4 m-2">
+            <div className="flex items-start">
               <img
-                class="block h-10 w-10 max-w-full flex-shrink-0 rounded-full align-middle"
+                className="block h-10 w-10 max-w-full flex-shrink-0 rounded-full align-middle"
                 src="https://i.pravatar.cc/152"
                 alt=""
               />
 
-              <div class="ml-6">
-                <div class="flex items-center">{Stars(rating)}</div>
-                <p class="mt-5 text-base text-gray-900">
+              <div className="ml-6">
+                <div className="flex items-center">{Stars(rating)}</div>
+                <p className="mt-5 text-base text-gray-900">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Porro blanditiis sapiente ab dolores, ad dignissimos
                   perspiciatis.
                 </p>
-                <p class="mt-5 text-sm font-bold text-gray-900"></p>
-                <p class="mt-1 text-sm text-gray-600">Fevereiro 01, 2023</p>
+                <p className="mt-5 text-sm font-bold text-gray-900"></p>
+                <p className="mt-1 text-sm text-gray-600">Fevereiro 01, 2023</p>
               </div>
             </div>
           </li>

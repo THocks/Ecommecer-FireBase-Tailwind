@@ -29,7 +29,7 @@ const SectionProdutos = () => {
               Frete Gratis
             </h3>
             <p className="font-hk text-base tracking-wide text-secondary-lighter text-gray-500">
-              Em todos os pedidos acima de $ 30
+              Em todos os pedidos acima de R$ 30
             </p>
           </div>
         </div>
