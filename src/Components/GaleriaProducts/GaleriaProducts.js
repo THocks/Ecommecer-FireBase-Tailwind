@@ -1,104 +1,126 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+//Context
 import { ProductContext } from "../../context/ProductsContext";
 //React Icons
-import { IoCartSharp } from "react-icons/io5";
+import { BsBag } from "react-icons/bs";
 
+//Imgs
+import legoImgs from "../../ImagePr/legomarca.png";
+import funkoLogo from "../../ImagePr/funko-logo.png";
+import nerfLogo from "../../ImagePr/Nerf-Logo.png";
+import dcLogo from "../../ImagePr/dclogo.svg";
+import caloiMarca from "../../ImagePr/caloimarca.jpg";
+import babykids from "../../ImagePr/babykids logo.png";
+//Components
+import Stars from "../Stars/Stars";
 const GaleriaProducts = () => {
   const { products } = useContext(ProductContext);
-  const productsByItens = products.slice(14, 26);
+  const productsByItens = products.slice(14, 22);
 
   return (
-    <div className="flex flex-wrap items-center justify-center">
-      {productsByItens.map((product) => (
-        <div class="relative m-10 flex  w-full max-w-xs flex-col overflow-hidden rounded-lg border  border-gray-100 bg-white shadow-md">
-          <Link class="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl">
-            <img
-              class="object-contain bg-center"
-              src={product.image}
-              alt="productimage"
-            />
-            <span class="absolute top-0 left-0 m-2 rounded-full bg-red-500 px-2 text-center text-sm font-medium text-white">
-              25% OFF
-            </span>
-          </Link>
-          <div class="mt-4 px-5 pb-5">
-            <Link>
-              <h5 class="text-xl tracking-tight text-slate-900">
-                {product.name}
-              </h5>
+    <>
+      <div className="flex flex-wrap items-center justify-center ">
+        {productsByItens.map((product) => (
+          <div
+            key={product.id}
+            className="relative m-10 flex  w-full max-w-xs flex-col overflow-hidden rounded-lg border  border-gray-100 bg-white shadow-md hover:scale-105"
+          >
+            <Link className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl  justify-center">
+              <img
+                className="object-cover"
+                src={product.image}
+                alt="productimage"
+              />
+              <span className="absolute top-0 left-0 m-2 rounded-full bg-red-500 px-2 text-center text-sm font-medium text-white">
+                25% OFF
+              </span>
             </Link>
-            <div class="mt-2 mb-5 flex items-center justify-between">
-              <p>
-                <span class="text-3xl font-bold text-slate-900">
-                  R${product.preco}
-                </span>
-                <span class="text-sm text-slate-900 line-through">
-                  R${product.precoAnt}
-                </span>
-              </p>
-              <div class="flex items-center">
-                <svg
-                  aria-hidden="true"
-                  class="h-5 w-5 text-yellow-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg
-                  aria-hidden="true"
-                  class="h-5 w-5 text-yellow-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg
-                  aria-hidden="true"
-                  class="h-5 w-5 text-yellow-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg
-                  aria-hidden="true"
-                  class="h-5 w-5 text-yellow-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg
-                  aria-hidden="true"
-                  class="h-5 w-5 text-yellow-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <span class="mr-2 ml-3 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">
-                  5.0
+            <div className="mt-4 px-5 pb-5">
+              <Link to={`/product/${product.id}`}>
+                <h5 className="text-xl tracking-tight text-slate-900 h-12">
+                  {product.name}
+                </h5>
+              </Link>
+              <div className="flex items-center mt-4">
+                {Stars(product.rating)}
+                <span className="mr-2 ml-3 rounded bg-yellow-300 px-2.5 py-0.5 text-xs font-semibold">
+                  {product.rating.toFixed(1)}
                 </span>
               </div>
+              <div className="mt-2 mb-5 flex items-center justify-between">
+                <p>
+                  <span className="text-3xl font-bold text-slate-900">
+                    R${product.preco.toFixed(2)}
+                  </span>
+                  <span className="text-sm text-slate-900 line-through ml-2">
+                    R${product.precoAnt.toFixed(2)}
+                  </span>
+                </p>
+              </div>
+              <Link
+                href="#"
+                className="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300 "
+              >
+                <BsBag size={20} className="mr-2" />
+                Adicionar ao Carrinho
+              </Link>
             </div>
-            <Link
-              href="#"
-              class="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
-            >
-              <IoCartSharp size={20} />
-              Adicionar ao Carrinho
-            </Link>
           </div>
+        ))}
+      </div>
+      <div className="flex justify-center mb-2">
+        <a href="#_" className="relative inline-block text-lg group ">
+          <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+            <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+            <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-slate-900 group-hover:-rotate-180 ease"></span>
+            <span className="relative">Ver Mais</span>
+          </span>
+          <span
+            className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-slate-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
+            data-rounded="rounded-lg"
+          ></span>
+        </a>
+      </div>
+      {/** Mostrar as marcas Slogan */}
+      <div className="border-b border-grey-dark mt-8 px-4 py-8 md:px-6 md:py-12 lg:px-20  ">
+        <h4 className="text-center font-hk text-xl uppercase text-gray-800 font-bold">
+          Nossos Parceiros
+        </h4>
+        <div className="grid grid-cols-2 gap-5 pt-8 sm:grid-cols-3 lg:grid-cols-6">
+          <img
+            className="mb-8 h-24 w-full object-contain sm:mb-10 lg:mb-0"
+            src={legoImgs}
+            alt="legoicon"
+          />
+          <img
+            className="mb-8 h-24 w-full object-contain sm:mb-10 lg:mb-0"
+            src={funkoLogo}
+            alt="funkoicon"
+          />
+          <img
+            className="mb-8 h-24 w-full object-contain sm:mb-10 lg:mb-0"
+            src={nerfLogo}
+            alt="nerficon"
+          />
+          <img
+            className="mb-8 h-24 w-full object-contain sm:mb-10 lg:mb-0"
+            src={dcLogo}
+            alt="Dclogo"
+          />
+          <img
+            className="mb-8 h-24 w-full object-contain sm:mb-10 lg:mb-0"
+            src={caloiMarca}
+            alt="CaloiMarca"
+          />
+          <img
+            className="mb-8 h-24 w-full object-contain sm:mb-10 lg:mb-0"
+            src={babykids}
+            alt="baby kids"
+          />
         </div>
-      ))}
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -75,6 +75,7 @@ const data = [
     precoAnt: 85.92,
     marca: "Funko",
     Estoque: 20,
+    rating: 4.5,
     description:
       "Funko pop, colecionavel do Homem Aranha enfeite sua estante com este lindo funko ",
   },
@@ -88,6 +89,7 @@ const data = [
     precoAnt: 85.92,
     marca: "Funko",
     Estoque: 10,
+    rating: 4.5,
     description:
       "Funko pop, colecionavel da Hermione enfeite sua estante com este lindo funko ",
   },
@@ -101,6 +103,7 @@ const data = [
     precoAnt: 85.92,
     marca: "Funko",
     Estoque: 15,
+    rating: 4.5,
     description:
       "Funko pop, colecionavel do HarryPother enfeite sua estante com este lindo funko ",
   },
@@ -115,6 +118,7 @@ const data = [
     precoAnt: 25.62,
     marca: "Almofada",
     Estoque: 15,
+    rating: 3.8,
     description:
       "Almofada confortavél que faz todo sucesso em casa com criançada feita com 100% de Algodão",
   },
@@ -128,6 +132,7 @@ const data = [
     precoAnt: 105.95,
     marca: "Banco Imobiliario",
     Estoque: 15,
+    rating: 3.9,
     description:
       "Faça a diversão na sua propria casa, conquiste casa, apartamentos e comprem ações joguem banco imobilário",
   },
@@ -141,6 +146,7 @@ const data = [
     precoAnt: 125.81,
     marca: "BabyLife",
     Estoque: 15,
+    rating: 5.0,
     description:
       "Faça a alegria de seus filhos, com a boneca BabyLife contendo funcionalidades, de cantar e chorar",
   },
@@ -154,6 +160,7 @@ const data = [
     precoAnt: 205.91,
     marca: "Toys",
     Estoque: 10,
+    rating: 2.9,
     description:
       "Brinquendo da Disney, do filme encanto faça diversão dos seus filhos, o brinquendo conta com diversas funcionalidades fazendo a criança pensar e usar a imaginação ",
   },
@@ -167,6 +174,7 @@ const data = [
     precoAnt: 205.49,
     marca: "Lego",
     Estoque: 15,
+    rating: 4.8,
     description:
       " Lego Minecraft, para toda criançada e adultos contem mais de 100 peças para se montar ",
   },
@@ -180,6 +188,7 @@ const data = [
     precoAnt: 1175.95,
     marca: "Hover",
     Estoque: 15,
+    rating: 4.9,
     description:
       "O Skate do futuro entrou na moda, revolução no meio de transporte pessoal e na forma de se divertir. É leve, compacto, portátil e fácil de usar.",
   },
@@ -192,6 +201,7 @@ const data = [
     precoAnt: 1175.95,
     divP: 396.33,
     marca: "Hover",
+    rating: 4.9,
     description: "6 Led Hoverboard Skate Electrico Overboard Bluetooth Scooter",
   },
   {
@@ -204,6 +214,7 @@ const data = [
     divP: 6.48,
     marca: "Toys",
     Estoque: 15,
+    rating: 5.0,
     description:
       "Boneco da disney infinity Venom complete sua coleção hoje mesmo.",
   },
@@ -216,6 +227,8 @@ const data = [
     precoAnt: 105.91,
     divP: 13.33,
     marca: "Toys",
+    Estoque: 15,
+    rating: 3.8,
     description:
       "Brinque de fazer aquele declicioso chá, jogo completo contendo chicáras e colheres",
   },
@@ -228,6 +241,8 @@ const data = [
     precoAnt: 78.12,
     divP: 19.88,
     marca: "Funko",
+    Estoque: 15,
+    rating: 4.5,
     description:
       "Funko pop, colecionavel do Darth Vader enfeite sua estante com este lindo funko",
   },
@@ -241,6 +256,7 @@ const data = [
     divP: 23.31,
     marca: "	Funko ",
     Estoque: 5,
+    rating: 4.5,
     description:
       "Funko pop, colecionavel do Luke SkyWalker enfeite sua estante com este lindo funko",
   },
@@ -254,6 +270,7 @@ const data = [
     divP: 61.75,
     marca: "Nerf",
     Estoque: 10,
+    rating: 3.2,
     description:
       "O Lançador Nerf Alpha Strike Claw QS-4 possui 6 tubos frontais para lançar até 4 dados sucessivos! Fácil de brincar: Basta inserir 1 dardo em cada tudo, puxar a manopla, e pressionar a alavanca de disparo para lançar 1 dardo.",
   },
@@ -267,6 +284,7 @@ const data = [
     divP: 4.99,
     marca: "Spin Master",
     Estoque: 15,
+    rating: 2.3,
     description:
       "Brinquedo infantil arco e flecha wellkids,contém sete peças, sendo 3 flechas, 3 patos e um arcom,A flechas lançam de verdade e possuem ventosas.",
   },
@@ -279,6 +297,8 @@ const data = [
     precoAnt: 25.45,
     divP: 6.51,
     marca: "cars",
+    Estoque: 18,
+    rating: 4.5,
     description:
       " Não recomendado para crianças menores de 3 anos, por conter partes pequenas que podem ser engolidas ou aspiradas",
   },
@@ -292,6 +312,7 @@ const data = [
     precoAnt: 99.99,
     marca: "Funko",
     Estoque: 18,
+    rating: 4.5,
     description: "Adicione este Funko Pop do Thor à sua coleção de Vingadores.",
   },
   {
@@ -304,6 +325,7 @@ const data = [
     precoAnt: 129.9,
     marca: "Bandai",
     Estoque: 10,
+    rating: 5.0,
     description: "Colecione o lendário Super Saiyajin com este boneco do Goku.",
   },
   {
@@ -316,6 +338,7 @@ const data = [
     precoAnt: 99.99,
     marca: "Funko",
     Estoque: 22,
+    rating: 4.5,
     description:
       "Adicione este Funko Pop do Capitão América à sua coleção de Vingadores.",
   },
@@ -329,6 +352,7 @@ const data = [
     precoAnt: 299.9,
     marca: "Hasbro",
     Estoque: 8,
+    rating: 4.5,
     description:
       "Adquira este boneco articulado do icônico vilão da saga Star Wars.",
   },
@@ -342,6 +366,7 @@ const data = [
     precoAnt: 109.9,
     marca: "DC Collectibles",
     Estoque: 14,
+    rating: 5.0,
     description: "Colecione o Cavaleiro das Trevas com este boneco do Batman.",
   },
   {
@@ -354,6 +379,7 @@ const data = [
     precoAnt: 169.9,
     marca: "Mattel",
     Estoque: 9,
+    rating: 3.0,
     description:
       "Tenha em sua coleção este boneco do Rei dos Mares, o Aquaman.",
   },
@@ -367,6 +393,7 @@ const data = [
     precoAnt: 69.99,
     marca: "RC Cars",
     Estoque: 10,
+    rating: 3.1,
     description:
       "Carrinho de controle remoto de alta velocidade para crianças e adultos.",
   },
@@ -381,6 +408,7 @@ const data = [
     precoAnt: 39.99,
     marca: "Arte Kids",
     Estoque: 25,
+    rating: 2.5,
     description:
       "Kit de pintura completo para crianças, com tintas, pincéis e papel.",
   },
@@ -395,6 +423,7 @@ const data = [
     precoAnt: 249.99,
     marca: "Bike Kids",
     Estoque: 5,
+    rating: 5.0,
     description:
       "Bicicleta infantil com rodinhas e diversos acessórios de segurança.",
   },
@@ -409,6 +438,7 @@ const data = [
     precoAnt: 49.99,
     marca: "Doll House",
     Estoque: 12,
+    rating: 5.0,
     description:
       "Boneca de pano com vestido rosa e cabelos loiros para crianças brincarem.",
   },
@@ -423,6 +453,7 @@ const data = [
     precoAnt: 599.99,
     marca: "Jumping",
     Estoque: 2,
+    rating: 5.0,
     description:
       "Pula-Pula inflável para crianças se divertirem na festa de aniversário.",
   },
@@ -437,6 +468,7 @@ const data = [
     precoAnt: 99.99,
     marca: "Chess Master",
     Estoque: 8,
+    rating: 1.8,
     description:
       "Jogo de Xadrez com peças de metal e tabuleiro de madeira para adultos.",
   },
@@ -450,6 +482,7 @@ const data = [
     precoAnt: 99.99,
     marca: "Nike",
     Estoque: 25,
+    rating: 5.0,
     description:
       "Bola de futebol oficial da FIFA, modelo Premier Team da Nike.",
   },
@@ -463,6 +496,7 @@ const data = [
     precoAnt: 18.99,
     marca: "Puzzle",
     Estoque: 50,
+    rating: 5.0,
     description:
       "Cubo mágico 3x3x3 puzzle, ótimo para desenvolver a mente e a coordenação motora.",
   },
@@ -476,6 +510,7 @@ const data = [
     precoAnt: 44.99,
     marca: "Quebra-Cabeça",
     Estoque: 20,
+    rating: 5.0,
     description:
       "Quebra-cabeça de 1000 peças, ótimo para desenvolver a paciência e a concentração.",
   },
@@ -489,6 +524,7 @@ const data = [
     precoAnt: 54.99,
     marca: "Bolhas",
     Estoque: 10,
+    rating: 3.2,
     description:
       "Máquina de bolhas de sabão, ótimo para animar festas e brincadeiras ao ar livre.",
   },
@@ -502,6 +538,7 @@ const data = [
     precoAnt: 199.99,
     marca: "Reborn",
     Estoque: 5,
+    rating: 4.1,
     description:
       "Boneca bebê reborn, feita de material macio e realista, ótima para colecionar e brincar.",
   },
@@ -516,6 +553,7 @@ const data = [
     precoAnt: 149.99,
     marca: "Grow",
     Estoque: 10,
+    rating: 2.4,
     description:
       "Jogo de tabuleiro clássico para toda a família, aprimore suas estratégias e conquiste territórios!",
   },
@@ -529,6 +567,7 @@ const data = [
     precoAnt: 39.99,
     marca: "Brinca e Monta",
     Estoque: 8,
+    rating: 5.0,
     description:
       "Quebra-cabeça de madeira para crianças acima de 3 anos, com peças em formato de animais selvagens.",
   },
@@ -542,6 +581,7 @@ const data = [
     precoAnt: 59.99,
     marca: "Adidas",
     Estoque: 25,
+    rating: 5.0,
     description:
       "Bola de futebol Adidas para uso em campo de grama natural, com alta durabilidade e performance.",
   },
@@ -556,6 +596,7 @@ const data = [
     precoAnt: 249.99,
     marca: "Wilson",
     Estoque: 3,
+    rating: 3.1,
     description:
       "Raquete de tênis profissional da marca Wilson, com tecnologia de amortecimento de vibração e alta performance.",
   },
@@ -569,6 +610,7 @@ const data = [
     precoAnt: 149.99,
     marca: "Pretorian",
     Estoque: 12,
+    rating: 5.0,
     description:
       "Luvas de boxe para treino Pretorian Training, com proteção para punhos e costas das mãos, e revestimento em couro sintético.",
   },
@@ -583,6 +625,7 @@ const data = [
     precoAnt: 1499.99,
     marca: "Caloi",
     Estoque: 7,
+    rating: 4.5,
     description:
       "Bicicleta Caloi Andes Aro 26, com 21 marchas, suspensão dianteira e quadro de alumínio. Ideal para trilhas leves e passeios em terrenos variados.",
   },
@@ -596,6 +639,7 @@ const data = [
     precoAnt: 99.99,
     marca: "Penalty",
     Estoque: 25,
+    rating: 5.0,
     description:
       "Bola de Futebol Penalty Campo S11 R1 VIII, com 11 gomos e tecnologia Termotec, que garante maior precisão e durabilidade durante os jogos.",
   },
@@ -609,6 +653,7 @@ const data = [
     precoAnt: 699.99,
     marca: "Rollerblade",
     Estoque: 10,
+    rating: 2.5,
     description:
       "Patins Rollerblade Zetrablade Feminino, com bota macia e confortável, rodas de 80mm e rolamentos ABEC-7 para maior estabilidade e velocidade.",
   },
@@ -622,6 +667,7 @@ const data = [
     precoAnt: 5200,
     marca: "Microsoft",
     Estoque: 7,
+    rating: 5.0,
     description:
       "Processador AMD Zen 2 personalizado com 8 núcleos a 3,8 GHz; GPU AMD RDNA 2 personalizada com 12 teraflops e 52 unidades de computação a 1,825 GHz; Armazenamento interno: SSD NVME personalizado de 1 TB com taxa de transferência de 2,4 GB/s (tamanho original) ou 4,8 GB/s (compactado);",
   },
@@ -636,6 +682,7 @@ const data = [
     precoAnt: 3500,
     marca: "Nintendo",
     Estoque: 3,
+    rating: 5.0,
     description:
       "Tela OLED de 7 polegadas com resolução de 1280x720 pixels; Bateria com autonomia de até 9 horas; Armazenamento interno: 64 GB, expansível com cartões microSDXC;",
   },
@@ -650,6 +697,7 @@ const data = [
     precoAnt: 6000,
     marca: "Sony",
     Estoque: 4,
+    rating: 5.0,
     description:
       "Largura de banda da RAM: 448 GB/s; Taxa de transferência da RAM: 14 GB/s; Armazenamento interno: SSD customizado de 2 TB, barramento de 12 canais e controlador PCI Express 4.0, com taxa de transferência de 5,5 GB/s (tamanho original) ou 8,9 GB/s (compactado);",
   },
@@ -664,6 +712,7 @@ const data = [
     precoAnt: 3000,
     marca: "Microsoft",
     Estoque: 6,
+    rating: 5.0,
     description:
       "Processador AMD Zen 2 personalizado com 8 núcleos a 3,6 GHz; GPU AMD RDNA 2 personalizada com 4 teraflops e 20 unidades de computação a 1,565 GHz; Armazenamento interno: SSD NVME personalizado de 512 GB com taxa de transferência de 2,4 GB/s (tamanho original) ou 4,8 GB/s (compactado);",
   },
@@ -677,7 +726,8 @@ const data = [
     divP: 733.33,
     precoAnt: 3000,
     marca: "Sony",
-    Estoque: 10,
+    Estoque: 6,
+    rating: 5.0,
     description:
       "Processador AMD Jaguar x86-64 de 8 núcleos; GPU AMD Radeon de 1,84 teraflops; Armazenamento interno: Disco rígido de 1 TB;",
   },
@@ -692,6 +742,7 @@ const data = [
     precoAnt: 299.99,
     marca: "Insomniac Games",
     Estoque: 12,
+    rating: 5.0,
     description:
       "Jogo exclusivo do PlayStation 5 que apresenta a nova aventura do Homem-Aranha, Miles Morales, em uma Nova York de última geração.",
   },
@@ -706,6 +757,7 @@ const data = [
     precoAnt: 399.99,
     marca: "FromSoftware",
     Estoque: 6,
+    rating: 4.5,
     description:
       "Remake do clássico jogo de RPG de ação lançado originalmente para PlayStation 3, agora com gráficos e jogabilidade aprimorados exclusivamente para o PlayStation 5.",
   },
@@ -720,6 +772,7 @@ const data = [
     precoAnt: 249.99,
     marca: "Naughty Dog",
     Estoque: 9,
+    rating: 3.2,
     description:
       "Jogo de ação e aventura pós-apocalíptico em que o jogador controla Ellie em busca de vingança, enquanto explora uma sociedade em ruínas devastada por um vírus.",
   },
@@ -734,6 +787,7 @@ const data = [
     precoAnt: 199.99,
     marca: "Santa Monica Studio",
     Estoque: 5,
+    rating: 4.9,
     description:
       "Jogo de ação e aventura em que o jogador assume o papel de Kratos, um antigo guerreiro espartano, em sua busca pela redenção e vingança contra os deuses gregos.",
   },
@@ -748,6 +802,7 @@ const data = [
     precoAnt: 159.99,
     marca: "Guerrilla Games",
     Estoque: 7,
+    rating: 5.0,
     description:
       "Jogo de ação e aventura em mundo aberto que se passa em um futuro distante em que a humanidade foi reduzida a uma sociedade tribal, com máquinas gigantes vagando pela terra.",
   },
@@ -761,6 +816,7 @@ const data = [
     precoAnt: 79.99,
     marca: "Decorando com Estilo",
     Estoque: 20,
+    rating: 3.0,
     description:
       "Almofada decorativa com estampa moderna, feita em tecido macio e confortável para decorar sua sala ou quarto.",
   },
@@ -775,6 +831,7 @@ const data = [
     precoAnt: 109.99,
     marca: "Peluchitos",
     Estoque: 15,
+    rating: 3.0,
     description:
       "Almofada em formato de lhama, feita em pelúcia macia e fofa, ideal para decorar seu quarto e abraçar enquanto dorme.",
   },
@@ -789,6 +846,7 @@ const data = [
     precoAnt: 39.99,
     marca: "Viagens Confortáveis",
     Estoque: 30,
+    rating: 3.0,
     description:
       "Almofada de viagem inflável, compacta e fácil de transportar, ideal para longas viagens de carro, ônibus ou avião.",
   },
@@ -803,6 +861,7 @@ const data = [
     precoAnt: 249.99,
     marca: "Relaxando em Casa",
     Estoque: 8,
+    rating: 3.0,
     description:
       "Almofada massageadora shiatsu, com 8 cabeças de massagem e aquecimento, para aliviar a tensão e o estresse do dia a dia.",
   },
@@ -817,6 +876,7 @@ const data = [
     precoAnt: 159.99,
     marca: "Mamãe e Bebê",
     Estoque: 12,
+    rating: 4.2,
     description:
       "Almofada de amamentação, com formato anatômico para melhor conforto da mãe e do bebê durante a amamentação.",
   },
@@ -831,6 +891,7 @@ const data = [
     precoAnt: 9999.99,
     marca: "Speed Master",
     Estoque: 3,
+    rating: 5.0,
     description:
       "Bicicleta de estrada profissional com quadro em fibra de carbono, transmissão Shimano Ultegra, rodas em carbono e pneus Continental, para alta performance em corridas e treinos de ciclismo.",
   },
@@ -845,6 +906,7 @@ const data = [
     precoAnt: 7499.99,
     marca: "Trilhas Radicais",
     Estoque: 5,
+    rating: 5.0,
     description:
       "Bicicleta MTB Full Suspension com quadro em alumínio, suspensão dianteira e traseira, transmissão Shimano Deore XT e freios a disco hidráulicos, para trilhas e aventuras off-road.",
   },
@@ -859,6 +921,7 @@ const data = [
     precoAnt: 1499.99,
     marca: "Bike Chic",
     Estoque: 10,
+    rating: 5.0,
     description:
       "Bicicleta urbana feminina com quadro em alumínio, cesta dianteira e porta-bagagens traseiro, transmissão Shimano de 7 velocidades e pneus largos, para deslocamentos diários com estilo e conforto.",
   },
@@ -873,6 +936,7 @@ const data = [
     precoAnt: 349.99,
     marca: "Kids Bikes",
     Estoque: 20,
+    rating: 5.0,
     description:
       "Bicicleta infantil aro 12 com quadro em aço carbono, rodinhas laterais e freio a tambor, para as primeiras pedaladas das crianças.",
   },
@@ -887,6 +951,7 @@ const data = [
     precoAnt: 4999.99,
     marca: "Eco Bikes",
     Estoque: 8,
+    rating: 5.0,
     description:
       "Bicicleta elétrica dobrável com motor de 250W, bateria de lítio de longa duração, transmissão Shimano de 7 velocidades e freios a disco hidráulicos, para mobilidade urbana prática e sustentável.",
   },
@@ -900,6 +965,7 @@ const data = [
     precoAnt: 2499.99,
     marca: "Eco Wheels",
     Estoque: 15,
+    rating: 4.4,
     description:
       "Hoverboard elétrico com motor de 250W, bateria de lítio de longa duração, velocidade máxima de 15km/h e autonomia de até 15km, para diversão e mobilidade urbana.",
   },
@@ -914,6 +980,7 @@ const data = [
     precoAnt: 3749.99,
     marca: "Radical Rides",
     Estoque: 5,
+    rating: 4.7,
     description:
       "Hoverboard off-road com motor de 350W, bateria de lítio de longa duração, rodas infláveis de 10 polegadas e velocidade máxima de 20km/h, para aventuras em terrenos irregulares.",
   },
@@ -928,6 +995,7 @@ const data = [
     precoAnt: 2999.99,
     marca: "Hover Ride",
     Estoque: 7,
+    rating: 5.0,
     description:
       "Hoverboard com assento removível, motor de 250W, bateria de lítio de longa duração, velocidade máxima de 15km/h e autonomia de até 15km, para uso como scooter elétrico.",
   },
@@ -941,6 +1009,7 @@ const data = [
     precoAnt: 22.75,
     marca: "Almofada Toys",
     Estoque: 7,
+    rating: 3.5,
     description:
       "Hoverboard com assento removível, motor de 250W, bateria de lítio de longa duração, velocidade máxima de 15km/h e autonomia de até 15km, para uso como scooter elétrico.",
   },
@@ -954,6 +1023,7 @@ const data = [
     precoAnt: 85.92,
     marca: "Funko",
     Estoque: 15,
+    rating: 4.5,
     description: "Funko pop, colecionavel do escudo do capitão américa",
   },
 ];
