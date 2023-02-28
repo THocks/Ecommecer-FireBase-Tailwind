@@ -79,9 +79,9 @@ const ProductDetails = () => {
             </div>
 
             <div className="lg:col-span-2 lg:row-span-2 lg:row-end-2">
-              <h1 className="sm: text-xl font-bold text-gray-900 sm:text-xl">
+              <h1 className="sm: text-lg p-5 font-bold text-gray-900 sm:text-xl">
                 {name}
-                <span className="ml-8 rounded-full bg-red-500 px-5 py-2 font-hk text-sm font-bold uppercase leading-none text-white">
+                <span className="ml-8 rounded-full bg-red-500 px-2 py-2 font-hk text-sm font-bold uppercase leading-none text-white">
                   off 25%
                 </span>
               </h1>

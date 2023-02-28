@@ -1,44 +1,32 @@
 import React, { useContext } from "react";
 import { useState, useEffect } from "react";
 // REACT ICONS
-import { BsFillArrowLeftCircleFill, BsTypeH1 } from "react-icons/bs";
+import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { BsFillArrowRightCircleFill, BsBag } from "react-icons/bs";
 import { ProductContext } from "../context/ProductsContext";
 import Stars from "../Components/Stars/Stars";
 import { Link } from "react-router-dom";
 
-import bannerOne from "../ImagePr/bannerOne.png";
-import bannerTwo from "../ImagePr/bannerTwo.png";
-import bannerThere from "../imgs/BannerThree.png";
+import { BsSearch } from "react-icons/bs";
+import { CardContext } from "../context/CardContext";
+
 const TodosOsProdutos = () => {
   const { products } = useContext(ProductContext);
-  const images = [bannerOne, bannerTwo, bannerThere];
-  const [open, setOpen] = useState(true);
-  const [currentImage, setCurrentImage] = useState(0);
-  const [currentPages, setCurrentPages] = useState(1);
-
-  const pages = 12;
-  const firstItemIndex = (currentPages - 1) * pages;
-
-  function handlePrev() {
-    setCurrentImage(currentImage === 0 ? images.length - 1 : currentImage - 1);
-  }
-
-  function handleNext() {
-    setCurrentImage(currentImage === images.length - 1 ? 0 : currentImage + 1);
-  }
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleNext();
-    }, 20000);
-
-    return () => clearInterval(interval);
-  }, [currentImage]);
-
-  const handlePageChange = (pageNumber) => {
-    setCurrentPages(pageNumber);
-  };
+  const {
+    name,
+    setName,
+    handleFilterName,
+    currentImage,
+    currentPages,
+    open,
+    setOpen,
+    handlePageChange,
+    handlePrev,
+    handleNext,
+    images,
+    pages,
+    firstItemIndex,
+  } = useContext(CardContext);
 
   return (
     <>
@@ -71,8 +59,8 @@ const TodosOsProdutos = () => {
       {/******************************************************************************* */}
       <div className="flex">
         <div
-          className={`bg-white h-96 shadow-lg p-5 pt-8 my-6  ${
-            open ? " w-96" : "w-14"
+          className={`bg-white h-[550px] shadow-lg p-5 pt-8 my-6  ${
+            open ? " w-96" : "w-8"
           }  relative`}
         >
           <BsFillArrowLeftCircleFill
@@ -81,10 +69,72 @@ const TodosOsProdutos = () => {
             }`}
             onClick={() => setOpen(!open)}
           />
+          <div className="mr-4">
+            <div className=" text-black bg-white flex items-center justify-center mb-3">
+              <div className=" font-bold overflow-hidden flex">
+                Filtros de Busca
+              </div>
+            </div>
+            <div className=" text-black bg-white flex items-center justify-center mt-8">
+              <div className="border rounded overflow-hidden flex">
+                <input
+                  type="text"
+                  className="px-4 py-2"
+                  placeholder="Pesquisar..."
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+                <button className="flex items-center justify-center px-4 border-l">
+                  <BsSearch />
+                </button>
+              </div>
+            </div>
+            <div className=" text-black bg-white flex items-center justify-center mt-4">
+              <div className=" font-bold overflow-hidden flex">
+                Filtrar por Categoria
+              </div>
+            </div>
+            <div className=" text-black bg-white flex items-center justify-center mt-8">
+              <div className="border rounded overflow-hidden flex">
+                <select name="filtros-categoria" id="filtros" className="w-64">
+                  <option value="">Selecionar</option>
+                  <option value="Jogos e VideoGames">
+                    Jogos e Video Games
+                  </option>
+                  <option value="Jogos de Tabuleiro">Jogos de Tabuleiro</option>
+                  <option value="Almofadas">Almofadas</option>
+                  <option value="HoverBoard">HoverBoard</option>
+                  <option value="Funko">Funko</option>
+                  <option value="Lego">Lego</option>
+                </select>
+              </div>
+            </div>
+            <div className=" text-black bg-white flex items-center justify-center mt-4">
+              <div className=" font-bold overflow-hidden flex">
+                Filtrar por preço
+              </div>
+            </div>
+            <div className=" text-black bg-white flex items-center justify-center mt-8">
+              <div className="border rounded overflow-hidden flex">
+                <label className="text-center">
+                  Min
+                  <input type="number" className="w-24  " placeholder="" />
+                </label>
+                <label className="text-center">
+                  Max
+                  <input type="number" className="w-24" placeholder="" />
+                </label>
+                <button className="bg-slate-900 w-14 flex justify-center items-center ransition-all duration-300 hover:bg-neutral-700 dark:text-white">
+                  <BsSearch color="white" size={15} />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="flex flex-wrap items-center justify-center ">
           {products
             .slice(firstItemIndex, firstItemIndex + pages)
+            .filter(handleFilterName)
             .map((product) => (
               <div
                 key={product.id}

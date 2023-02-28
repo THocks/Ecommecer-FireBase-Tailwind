@@ -47,25 +47,11 @@ const Header = () => {
           } lg:block pt-6 lg:pt-0`}
           id="nav-content"
         >
-          <ul className="list-reset lg:flex justify-end flex-1 items-center">
+          <ul className="list-reset lg:flex justify-end flex-1 items-center ">
             <li className="mr-3">
               <Link className="inline-block py-2 px-4 text-white no-underline">
                 Active
               </Link>
-            </li>
-            <li className="mr-3">
-              <div className="font-sans text-black bg-white flex items-center justify-center">
-                <div className="border rounded overflow-hidden flex">
-                  <input
-                    type="text"
-                    className="px-4 py-2"
-                    placeholder="Pesquisar..."
-                  />
-                  <button className="flex items-center justify-center px-4 border-l">
-                    <BsSearch />
-                  </button>
-                </div>
-              </div>
             </li>
             <li className="mr-3">
               <Link className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4">
@@ -82,7 +68,7 @@ const Header = () => {
                 Contate-nos
               </Link>
             </li>
-            <li className="mr-12 ml-12 relative">
+            <li className="mr-8 ml-8 relative">
               <div
                 onClick={() => setIsOpen(!isOpen)}
                 className="cursor-pointer flex absolute "
