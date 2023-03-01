@@ -401,7 +401,7 @@ const data = [
   {
     name: "Kit de Pintura para Crianças",
     id: 25,
-    category: "bonecas",
+    category: "Bonecas",
     image: kitpinturacriança,
     preco: 29.99,
     divP: 9.99,
@@ -618,7 +618,7 @@ const data = [
   {
     name: "Bicicleta Caloi Andes Aro 26",
     id: 40,
-    category: "Bicicleta",
+    category: "bicicletas",
     image: bikecaloi,
     preco: 1199.99,
     divP: 399.99,
@@ -809,7 +809,7 @@ const data = [
   {
     name: "Almofada Decorativa Estampada",
     id: 53,
-    category: "almofadas",
+    category: "traveseiro",
     image: almofadaOne,
     preco: 59.99,
     divP: 14.99,
@@ -824,7 +824,7 @@ const data = [
   {
     name: "Almofada de Pelúcia Lhama",
     id: 54,
-    category: "almofadas",
+    category: "traveseiro",
     image: almofadaIama,
     preco: 89.99,
     divP: 22.5,
@@ -839,7 +839,7 @@ const data = [
   {
     name: "Almofada de Viagem Inflável",
     id: 55,
-    category: "almofadas",
+    category: "traveseiro",
     image: almofadaviagem,
     preco: 29.99,
     divP: 7.5,
@@ -854,7 +854,7 @@ const data = [
   {
     name: "Almofada Massageadora Shiatsu",
     id: 56,
-    category: "almofadas",
+    category: "traveseiro",
     image: almofadamassage,
     preco: 199.99,
     divP: 50,
@@ -869,7 +869,7 @@ const data = [
   {
     name: "Almofada de Amamentação",
     id: 57,
-    category: "almofadas",
+    category: "traveseiro",
     image: almosfada,
     preco: 129.99,
     divP: 32.5,
@@ -1002,7 +1002,7 @@ const data = [
   {
     name: "Almofada de criança 100% algodão",
     id: 66,
-    category: "almofadas",
+    category: "traveseiro",
     image: almofadadalenci,
     preco: 10.55,
     divP: 3.25,

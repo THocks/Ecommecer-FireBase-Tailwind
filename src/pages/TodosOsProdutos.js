@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { useState, useEffect } from "react";
 // REACT ICONS
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { BsFillArrowRightCircleFill, BsBag } from "react-icons/bs";
@@ -26,6 +25,12 @@ const TodosOsProdutos = () => {
     images,
     pages,
     firstItemIndex,
+    handleFilterCategory,
+    categoria,
+    setCategoria,
+    pricePesquisa,
+    setPricePesquisa,
+    handleFilterPrice,
   } = useContext(CardContext);
 
   return (
@@ -96,16 +101,22 @@ const TodosOsProdutos = () => {
             </div>
             <div className=" text-black bg-white flex items-center justify-center mt-8">
               <div className="border rounded overflow-hidden flex">
-                <select name="filtros-categoria" id="filtros" className="w-64">
+                <select
+                  name="filtros-categoria"
+                  id="filtros"
+                  className="w-64"
+                  value={categoria}
+                  onChange={(e) => setCategoria(e.target.value)}
+                >
                   <option value="">Selecionar</option>
-                  <option value="Jogos e VideoGames">
-                    Jogos e Video Games
-                  </option>
-                  <option value="Jogos de Tabuleiro">Jogos de Tabuleiro</option>
-                  <option value="Almofadas">Almofadas</option>
-                  <option value="HoverBoard">HoverBoard</option>
+                  <option value="jogosevideogames">Jogos e Video Games</option>
+                  <option value="Tabuleiro">Jogos de Tabuleiro</option>
+                  <option value="traveseiro">Almofadas</option>
+                  <option value="hoverboards">HoverBoard</option>
                   <option value="Funko">Funko</option>
                   <option value="Lego">Lego</option>
+                  <option value="Bonecas">Bonecas</option>
+                  <option value="bicicletas">Bicicletas</option>
                 </select>
               </div>
             </div>
@@ -115,26 +126,31 @@ const TodosOsProdutos = () => {
               </div>
             </div>
             <div className=" text-black bg-white flex items-center justify-center mt-8">
-              <div className="border rounded overflow-hidden flex">
-                <label className="text-center">
-                  Min
-                  <input type="number" className="w-24  " placeholder="" />
-                </label>
-                <label className="text-center">
-                  Max
-                  <input type="number" className="w-24" placeholder="" />
-                </label>
-                <button className="bg-slate-900 w-14 flex justify-center items-center ransition-all duration-300 hover:bg-neutral-700 dark:text-white">
-                  <BsSearch color="white" size={15} />
-                </button>
+              <div className=" overflow-hidden flex flex-col">
+                <input
+                  type="range"
+                  value={pricePesquisa}
+                  onChange={(e) => setPricePesquisa(e.target.value)}
+                  min={0}
+                  max={1000}
+                  step={10}
+                  className="w-48 h-2 my-4 relative bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-slate-900 "
+                />
+                <span className="border-solid border-2 border-slate-900  w-18 text-center font-bold mt-3 ">
+                  R${pricePesquisa}
+                </span>
               </div>
             </div>
           </div>
         </div>
         <div className="flex flex-wrap items-center justify-center ">
           {products
-            .slice(firstItemIndex, firstItemIndex + pages)
+
             .filter(handleFilterName)
+            .filter(handleFilterCategory)
+            .filter(handleFilterPrice)
+            .slice(firstItemIndex, firstItemIndex + pages)
+
             .map((product) => (
               <div
                 key={product.id}

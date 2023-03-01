@@ -8,7 +8,7 @@ export const CardContext = createContext();
 const CardProvider = ({ children }) => {
   const [name, setName] = useState("");
   const [categoria, setCategoria] = useState("");
-  const [preco, SetPreco] = useState("");
+  const [pricePesquisa, setPricePesquisa] = useState("");
   const [cart, setCart] = useState([]);
   const [itemAmount, setItemAmount] = useState(0);
   const [total, setTotal] = useState(0);
@@ -46,15 +46,53 @@ const CardProvider = ({ children }) => {
     return product.name.toLowerCase().includes(name.toLowerCase());
   };
 
+  /****************************************************************** */
+  // Pesquisa pela categoria
+  const handleFilterCategory = (product) => {
+    if (categoria === "Tabuleiro") {
+      return product.category.includes(categoria);
+    }
+    if (categoria === "jogosevideogames") {
+      return product.category.includes(categoria);
+    }
+    if (categoria === "traveseiro") {
+      return product.category.includes(categoria);
+    }
+    if (categoria === "hoverboards") {
+      return product.category.includes(categoria);
+    }
+    if (categoria === "Funko") {
+      return product.category.includes(categoria);
+    }
+    if (categoria === "Lego") {
+      return product.category.includes(categoria);
+    }
+    if (categoria === "Bonecas") {
+      return product.category.includes(categoria);
+    }
+    if (categoria === "bicicletas") {
+      return product.category.includes(categoria);
+    } else {
+      return product;
+    }
+  };
+  /********************************************************************* */
+  const handleFilterPrice = (product) => {
+    return (
+      pricePesquisa === "0" ||
+      (pricePesquisa ? product.preco <= parseInt(pricePesquisa) : true)
+    );
+  };
+
   return (
     <CardContext.Provider
       value={{
+        pricePesquisa,
+        setPricePesquisa,
         name,
         setName,
         categoria,
         setCategoria,
-        preco,
-        SetPreco,
         handleFilterName,
         currentImage,
         setCurrentImage,
@@ -68,6 +106,8 @@ const CardProvider = ({ children }) => {
         images,
         pages,
         firstItemIndex,
+        handleFilterCategory,
+        handleFilterPrice,
       }}
     >
       {children}
