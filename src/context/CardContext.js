@@ -14,7 +14,7 @@ const CardProvider = ({ children }) => {
   const [total, setTotal] = useState(0);
   const [currentImage, setCurrentImage] = useState(0);
   const [currentPages, setCurrentPages] = useState(1);
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   //Carrousel Função ***********************************************/
   useEffect(() => {
     const interval = setInterval(() => {
