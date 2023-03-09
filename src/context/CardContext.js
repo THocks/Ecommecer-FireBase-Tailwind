@@ -49,6 +49,8 @@ const CardProvider = ({ children }) => {
   /****************************************************************** */
   // Pesquisa pela categoria
   const handleFilterCategory = (product) => {
+
+
     if (categoria === "Tabuleiro") {
       return product.category.includes(categoria);
     }

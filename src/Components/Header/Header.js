@@ -9,7 +9,7 @@ import logo from "../../imgs/Logo.png";
 //ICONS
 import { SlBag } from "react-icons/sl";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { BsSearch } from "react-icons/bs";
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="flex items-center justify-between flex-wrap bg-white shadow-md p-6 fixed w-full z-10 top-0">
+      <nav className="flex items-center justify-between flex-wrap bg-white shadow-md p-6  w-full z-10 top-0">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <Link
             className="text-black no-underline hover:text-white hover:no-underline"
@@ -59,12 +59,12 @@ const Header = () => {
               </Link>
             </li>
             <li className="mr-3">
-              <Link className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4">
+              <Link to={"/sobre"} className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4">
                 Sobre-Nos
               </Link>
             </li>
             <li className="mr-3">
-              <Link className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4">
+              <Link to={"/contato"} className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4">
                 Contate-nos
               </Link>
             </li>

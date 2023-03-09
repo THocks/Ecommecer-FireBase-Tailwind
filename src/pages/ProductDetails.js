@@ -20,7 +20,7 @@ const ProductDetails = () => {
   if (!product) {
     return (
       <section className="h-screen flex justify-center items-center text-white">
-        Sinto muito ainda não capturamos esse pokemon em nossa Pokedex
+        Produto, não encontrado no sistema
       </section>
     );
   }

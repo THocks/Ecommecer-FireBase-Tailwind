@@ -4,12 +4,17 @@ import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { BsFillArrowRightCircleFill, BsBag } from "react-icons/bs";
 import { ProductContext } from "../context/ProductsContext";
 import Stars from "../Components/Stars/Stars";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 import { BsSearch } from "react-icons/bs";
 import { CardContext } from "../context/CardContext";
 
+
+
 const TodosOsProdutos = () => {
+
+
+ 
   const { products } = useContext(ProductContext);
   const {
     name,
@@ -33,9 +38,13 @@ const TodosOsProdutos = () => {
     handleFilterPrice,
   } = useContext(CardContext);
 
+
+
+ 
+
   return (
-    <>
-      <div className="relative h-96  shadow-md mt-64 ">
+    <>    
+      <div className="relative h-96  shadow-md  ">
         <div className="absolute top-0 left-0 w-full h-auto">
           <img
             src={images[currentImage]}
@@ -61,12 +70,16 @@ const TodosOsProdutos = () => {
           </button>
         </div>
       </div>
+      
+      
       {/******************************************************************************* */}
-      <div className="flex">
-        <div
-          className={`bg-white h-[550px] shadow-lg p-5 pt-8 my-6  ${
-            open ? " w-96" : "w-8"
+      <div style={{ display: "flex" }}>
+    
+        <aside
+          className={`bg-white h-[550px] shadow-lg p-5 pt-8  ${
+            open ? " w-80 " : "w-14"
           }  relative`}
+          
         >
           <BsFillArrowLeftCircleFill
             className={` text-gray-900 text-4xl rounded-full absolute -right-3 top-9 cursor-pointer ${
@@ -142,8 +155,10 @@ const TodosOsProdutos = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex flex-wrap items-center justify-center ">
+        </aside>
+  
+        
+        <div className="flex flex-wrap items-center justify-center " style={{ width: "100%" }}>
           {products
 
             .filter(handleFilterName)
