@@ -34,7 +34,7 @@ const CarrouselProdutos = () => {
 
   return (
     <>
-      <div className="relative h-96  shadow-md mt-64 ">
+      <div className="relative h-96  shadow-md deferw ">
         <div className="absolute top-0 left-0 w-full h-auto">
           <img
             src={images[currentImage]}

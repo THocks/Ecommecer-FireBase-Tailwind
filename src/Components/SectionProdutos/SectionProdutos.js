@@ -1,5 +1,5 @@
-
-
+//ReactRouter
+import {Link} from 'react-router-dom'
 
 //Images
 import almofadasCategoria from "../../imgs/AlmofadasCat.png";
@@ -14,6 +14,9 @@ import suporte from "../../ImagePr/suporte.jpg";
 import retorno from "../../ImagePr/retorno.png";
 
 const SectionProdutos = () => {
+
+
+
 
   return (
     <>
@@ -76,7 +79,7 @@ const SectionProdutos = () => {
           <div className="px-4 py-8 md:px-6 md:py-12 lg:px-20 ">
             <div className="mt-8 grid grid-cols-2 gap-6 md:mt-10 md:grid-cols-4 lg:gap-10  cursor-pointer relative">
              
-              <article className="bg-violet-100 p-8 rounded-lg hover:scale-105 shadow-md ">
+              <Link to={`/product/category/HoverBoard`} className="bg-violet-100 p-8 rounded-lg hover:scale-105 shadow-md ">
                 <div className="mt-6 flex items-center justify-center md:mt-24">
                   <img
                     className="object-cover bg-transparent"
@@ -84,8 +87,8 @@ const SectionProdutos = () => {
                     alt="HoverBoard"
                   />
                 </div>
-              </article>
-              <article className="bg-violet-100 p-8 rounded-lg hover:scale-105 shadow-md ">
+              </Link>
+              <Link to={`/product/category/traveseiro`} className="bg-violet-100 p-8 rounded-lg hover:scale-105 shadow-md ">
                 <div className="mt-6 flex items-center justify-center md:mt-24">
                   <img
                     className="object-cover"
@@ -93,9 +96,9 @@ const SectionProdutos = () => {
                     alt="Almofada"
                   />
                 </div>
-              </article>
+              </Link>
 
-              <article className="bg-violet-100 p-8 rounded-lg hover:scale-105 shadow-md">
+              <Link to={`/product/category/tabuleiro`} className="bg-violet-100 p-8 rounded-lg hover:scale-105 shadow-md">
                 <div className="mt-6 flex items-center justify-center md:mt-24">
                   <img
                     className="object-cover"
@@ -103,9 +106,9 @@ const SectionProdutos = () => {
                     alt="Jogo de tabuleiro"
                   />
                 </div>
-              </article>
+              </Link>
 
-              <article className="bg-violet-100 p-8 rounded-lg hover:scale-105 shadow-md">
+              <Link to={`/product/category/jogosevideogames`} className="bg-violet-100 p-8 rounded-lg hover:scale-105 shadow-md">
                 <div className="mt-6 flex items-center justify-center md:mt-24">
                   <img
                     className="object-cover"
@@ -113,10 +116,10 @@ const SectionProdutos = () => {
                     alt="Jogos e & Video Games"
                   />
                 </div>
-              </article>
+              </Link>
             </div>
             <div className="mt-4 grid grid-cols-1 gap-5 md:mt-6 md:grid-cols-2 md:gap-6 lg:mt-8 lg:gap-8  ">
-              <article className="bg-violet-100 p-8 rounded-md cursor-pointer shadow-md hover:scale-105">
+              <Link  to={`/product/category/Funko`} className="bg-violet-100 p-8 rounded-md cursor-pointer shadow-md hover:scale-105">
                 <div className="mt-28 flex items-center justify-center md:mt-3">
                   <img
                     src={funkoPopCat}
@@ -124,8 +127,8 @@ const SectionProdutos = () => {
                     className="mt-14 object-cover"
                   />
                 </div>
-              </article>
-              <article className="bg-violet-100 p-8 rounded-md cursor-pointer shadow-md hover:scale-105">
+              </Link>
+              <Link to={`/product/category/bicicletas`} className="bg-violet-100 p-8 rounded-md cursor-pointer shadow-md hover:scale-105">
                 <div className="mt-28 flex items-center justify-center md:mt-1">
                   <img
                     src={bicletaCat}
@@ -133,7 +136,7 @@ const SectionProdutos = () => {
                     className="mt-14 object-cover"
                   />
                 </div>
-              </article>
+              </Link>
             </div>
           </div>
         </div>

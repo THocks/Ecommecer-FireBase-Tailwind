@@ -416,7 +416,7 @@ const data = [
   {
     name: "Bicicleta Infantil Aro 12",
     id: 26,
-    category: "bicicleta",
+    category: "bicicletas",
     image: bikeinfatil2,
     preco: 199.99,
     divP: 66.66,

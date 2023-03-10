@@ -190,7 +190,7 @@ const TodosOsProdutos = () => {
                       {product.name}
                     </h5>
                   </Link>
-                  <div className="flex items-center mt-4">
+                  <div className="flex items-center mt-8">
                     {Stars(product.rating)}
                     <span className="mr-2 ml-3 rounded bg-yellow-300 px-2.5 py-0.5 text-xs font-semibold">
                       {product.rating.toFixed(1)}

@@ -150,7 +150,7 @@ function CarrouselDetails({ category }) {
         ))}
       </Swiper>
       <div className="absolute top-1/2 -mt-4 left-4 z-10">
-        <button className="swiper-button-prev text-white text-2xl">
+        <button className="swiper-button-prev  text-white text-2xl">
           <AiOutlineArrowLeft />
         </button>
       </div>

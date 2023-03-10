@@ -24,7 +24,7 @@ const Stars = (rating) => {
 
   for (let i = 0; i < emptyStars; i++) {
     stars.push(
-      <FaRegStar key={`empty-star-${i}`} className="text-gray-300"></FaRegStar>
+      <FaRegStar key={`empty-star-${i}`} className="text-gray-300 "></FaRegStar>
     );
   }
 
